@@ -1,0 +1,11 @@
+$ball1-color:red;
+$ball2-color:blue;
+$ball3-color:yellow;
+
+
+%ball-setting {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}

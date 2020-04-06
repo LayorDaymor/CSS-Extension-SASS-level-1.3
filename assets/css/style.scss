@@ -1,0 +1,42 @@
+@import "variabels";
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}  
+
+section{
+    position: relative;
+    height: 100%;
+    width: 90%;
+    .ball1{
+        @extend %ball-setting ;
+        background-color: $ball1-color;
+        animation: animi 1s infinite ;
+        
+    }
+    .ball2{
+        @extend %ball-setting ;
+        top: 100px;
+        background-color: $ball2-color;
+        animation: animi 1.7s infinite ;
+        animation-delay: 0.9s;
+    }
+    .ball3{
+        @extend %ball-setting ;
+        top: 200px;
+        background-color: $ball3-color;
+        animation: animi 2s infinite ;
+    }
+}
+
+@keyframes animi{
+    0%,100%{
+        left: 0;
+    }
+    
+    75%{
+        left: 100%;
+    }
+}
